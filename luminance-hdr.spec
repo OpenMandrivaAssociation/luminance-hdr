@@ -21,7 +21,7 @@ BuildRequires:	fftw-devel
 BuildRequires:	libjpeg-devel
 BuildRequires:	libtiff-devel
 BuildRequires:	gsl-devel
-BuildRequires:	libraw-devel
+BuildRequires:	libraw-devel >= 0.11.2
 BuildRequires:	lcms-devel
 BuildRequires:	libgomp-devel
 Obsoletes:	qtpfsgui
