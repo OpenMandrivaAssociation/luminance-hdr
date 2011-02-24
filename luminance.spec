@@ -1,6 +1,6 @@
 %define version	2.0.2
 %define release	1
-#%define	pre	pre1
+%define	pre	pre1
 
 Name:		luminance-hdr
 Version:	%{version}
