@@ -23,6 +23,7 @@ BuildRequires:	libtiff-devel
 BuildRequires:	gsl-devel
 BuildRequires:	libraw-devel
 BuildRequires:	lcms-devel
+BuildRequires:	libgomp-devel
 
 %description
 Luminance is a graphical program for assembling bracketed photos into High
