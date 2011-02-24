@@ -24,6 +24,8 @@ BuildRequires:	gsl-devel
 BuildRequires:	libraw-devel
 BuildRequires:	lcms-devel
 BuildRequires:	libgomp-devel
+Obsoletes:	qtpfsgui
+Provides:	qtpfsgui
 
 %description
 Luminance is a graphical program for assembling bracketed photos into High
