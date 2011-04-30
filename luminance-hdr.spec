@@ -1,6 +1,6 @@
 %define version	2.0.2
-%define release	3
-%define	pre	pre1
+%define release	1
+#define pre	pre1
 
 Name:		luminance-hdr
 Version:	%{version}
@@ -10,9 +10,8 @@ Group:		Graphics
 License:	GPLv2+
 URL:		http://qtpfsgui.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/qtpfsgui/%{name}-%{version}%{?pre:-%pre}.tar.gz
-Patch0:		luminance-hdr-2.0.2-pre1-linkage.patch
-Patch1:		luminance-hdr-2.0.2-pre1-desktop_file_fix.patch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
+Patch0:		luminance-hdr-2.0.2-linkage.patch
+Patch1:		luminance-hdr-2.0.2-desktop_file_fix.patch
 
 BuildRequires:	libqt4-devel
 BuildRequires:	OpenEXR-devel
@@ -33,7 +32,8 @@ Dynamic Range (HDR) images.  It also provides a number of tone-mapping
 operators for creating low dynamic range versions of HDR images.
 
 %prep
-%setup -q -n %{name}-%{version}%{?pre:-%pre}
+#setup -q -n %{name}-%{version}%{?pre:-%pre}
+%setup -q -n LuminanceHDR-%{version}
 %patch0 -p0 -b .linkage
 %patch1 -p0 -b .desktop-fix
 
