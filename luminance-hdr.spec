@@ -61,3 +61,37 @@ operators for creating low dynamic range versions of HDR images.
 %{_datadir}/luminance
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/*/apps/%{name}.*
+
+
+%changelog
+* Tue Jan 31 2012 Andrey Bondrov <abondrov@mandriva.org> 2.2.0-1mdv2011.0
++ Revision: 769984
+- New version 2.2.0, switch to cmake, rediff patches, update file list
+
+* Tue Jan 24 2012 Andrey Bondrov <abondrov@mandriva.org> 2.1.0-1
++ Revision: 767916
+- New version 2.1.0, add QtWebKit to BuildRequires, update patches (sync with Mageia)
+
+* Sat May 07 2011 Jani Välimaa <wally@mandriva.org> 2.0.2-2
++ Revision: 672287
+- rebuild against new libraw
+
+* Sat Apr 30 2011 Jani Välimaa <wally@mandriva.org> 2.0.2-1
++ Revision: 661047
+- new version 2.0.2
+- rediff patches
+- drop buildroot definition
+
+* Thu Feb 24 2011 Jani Välimaa <wally@mandriva.org> 2.0.2-0.pre1.3
++ Revision: 639617
+- tighten libraw-devel BR
+
+* Thu Feb 24 2011 Jani Välimaa <wally@mandriva.org> 2.0.2-0.pre1.2
++ Revision: 639580
+- rename .spec file
+- obsolete and provide qtpfsgui
+
+* Thu Feb 24 2011 Jani Välimaa <wally@mandriva.org> 2.0.2-0.pre1.1
++ Revision: 639557
+- import luminance-hdr
+
