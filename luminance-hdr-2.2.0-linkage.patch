@@ -1,9 +1,0 @@
-diff -urN luminance-hdr-2.2.0/CMakeLists.txt luminance-hdr-2.2.0-patched/CMakeLists.txt
---- luminance-hdr-2.2.0/CMakeLists.txt	2012-01-23 01:08:25.000000000 +1100
-+++ luminance-hdr-2.2.0-patched/CMakeLists.txt	2012-01-31 19:23:23.320353936 +1100
-@@ -616,4 +616,4 @@
- 
- ENDIF()
- 
--TARGET_LINK_LIBRARIES(luminance-hdr ${LIBS})
-+TARGET_LINK_LIBRARIES(luminance-hdr ${LIBS} -llcms)
