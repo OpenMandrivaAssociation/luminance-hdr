@@ -1,6 +1,6 @@
-diff -urN luminance-hdr-2.2.0/luminance-hdr.desktop luminance-hdr-2.2.0-patched/luminance-hdr.desktop
---- luminance-hdr-2.2.0/luminance-hdr.desktop	2012-01-23 01:08:25.000000000 +1100
-+++ luminance-hdr-2.2.0-patched/luminance-hdr.desktop	2012-01-31 19:25:16.161352785 +1100
+diff -urN luminance-hdr-2.3.1/luminance-hdr.desktop luminance-hdr-2.3.1-patched/luminance-hdr.desktop
+--- luminance-hdr-2.3.1/luminance-hdr.desktop	2013-04-08 05:41:14.000000000 +1100
++++ luminance-hdr-2.3.1-patched/luminance-hdr.desktop	2014-01-15 17:03:02.835756875 +1100
 @@ -1,12 +1,11 @@
  [Desktop Entry]
 -Encoding=UTF-8
@@ -15,12 +15,3 @@ diff -urN luminance-hdr-2.2.0/luminance-hdr.desktop luminance-hdr-2.2.0-patched/
  Comment=Create and tonemap HDR images
  Comment[de]=Luminance HDR ist eine grafische Benutzeroberfläche zur Erzeugung von HDR-Bildern und deren Dynamikkompression
  Comment[en_US]=Luminance is a graphical user interface used to create and tonemap HDR images
-@@ -16,8 +15,6 @@
- Comment[tr]=HDR resim dosyaları oluşturun ve ton haritalamalarını düzenleyin
- Exec=luminance-hdr --gui %F
- Icon=luminance-hdr
--MimeType=
--Path=
- StartupNotify=true
- StartupWMClass=luminance-hdr
- Terminal=false
