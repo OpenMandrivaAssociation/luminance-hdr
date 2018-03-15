@@ -11,7 +11,7 @@ BuildRequires:	boost-devel
 BuildRequires:	gomp-devel
 BuildRequires:	jpeg-devel
 BuildRequires:	cmake(ECM)
-BuildRequires:  cmake(Qt5Concurrent) cmake(Qt5Core) cmake(Qt5Gui) cmake(Qt5Network) cmake(Qt5PrintSupport) cmake(Qt5Sql) cmake(Qt5WebEngineCore) cmake(Qt5WebEngineWidgets) cmake(Qt5Widgets) cmake(Qt5Xml)
+BuildRequires:  cmake(Qt5Concurrent) cmake(Qt5Core) cmake(Qt5Gui) cmake(Qt5Network) cmake(Qt5PrintSupport) cmake(Qt5Sql) cmake(Qt5WebEngineCore) cmake(Qt5WebEngineWidgets) cmake(Qt5Widgets) cmake(Qt5Xml) cmake(Qt5Svg)
 BuildRequires:	pkgconfig(exiv2)
 BuildRequires:	pkgconfig(fftw3)
 BuildRequires:	pkgconfig(gsl)
