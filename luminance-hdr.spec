@@ -8,6 +8,7 @@ Url:		http://qtpfsgui.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/qtpfsgui/%{name}-%{version}.tar.bz2
 BuildRequires:	cmake
 BuildRequires:	boost-devel
+BuildRequires:    boost-static-devel
 BuildRequires:	gomp-devel
 BuildRequires:	imagemagick
 BuildRequires:	jpeg-devel
