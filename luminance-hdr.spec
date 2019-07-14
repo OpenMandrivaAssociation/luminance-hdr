@@ -6,6 +6,7 @@ License:	GPLv2+
 Group:		Graphics
 Url:		http://qtpfsgui.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/qtpfsgui/%{name}-%{version}.tar.bz2
+# Source mirror: https://github.com/LuminanceHDR/LuminanceHDR
 BuildRequires:	cmake
 BuildRequires:	boost-devel
 BuildRequires:    boost-static-devel
@@ -54,9 +55,9 @@ operators for creating low dynamic range versions of HDR images.
 %{_bindir}/%{name}
 %{_bindir}/%{name}-cli
 %{_datadir}/%{name}
-%{_datadir}/applications/%{name}.desktop
-%{_datadir}/icons/hicolor/*/apps/%{name}.*
-%{_datadir}/appdata/%{name}.appdata.xml
+%{_datadir}/applications/net.sourceforge.qtpfsgui.LuminanceHDR.desktop
+ %{_iconsdir}/hicolor/*/apps/%{name}.*
+%{_datadir}/appdata/net.sourceforge.qtpfsgui.LuminanceHDR.appdata.xml
 
 #----------------------------------------------------------------------------
 
