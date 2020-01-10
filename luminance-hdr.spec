@@ -63,7 +63,7 @@ operators for creating low dynamic range versions of HDR images.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 # fix inconsistant newlines
 sed -i 's/\r//' Changelog
