@@ -1,7 +1,7 @@
 Summary:	A graphical tool for creating and tone-mapping HDR images
 Name:		luminance-hdr
 Version:	2.6.1.1
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Graphics
 Url:		http://qtpfsgui.sourceforge.net/
