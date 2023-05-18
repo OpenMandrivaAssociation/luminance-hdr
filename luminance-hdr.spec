@@ -1,13 +1,15 @@
 Summary:	A graphical tool for creating and tone-mapping HDR images
 Name:		luminance-hdr
 Version:	2.6.1.1
-Release:	3
+Release:	4
 License:	GPLv2+
 Group:		Graphics
 Url:		http://qtpfsgui.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/qtpfsgui/%{name}-%{version}.tar.bz2
+Patch0:		luminance-hdr-2.6.1.1-exiv2-0.28.patch
 # Source mirror: https://github.com/LuminanceHDR/LuminanceHDR
 BuildRequires:	cmake
+BuildRequires:	ninja
 BuildRequires:	boost-devel
 BuildRequires:  boost-static-devel
 BuildRequires:	gomp-devel
@@ -64,16 +66,17 @@ operators for creating low dynamic range versions of HDR images.
 #----------------------------------------------------------------------------
 
 %prep
-%setup -q
-%autopatch -p1
+%autosetup -p1
 
 # fix inconsistant newlines
 sed -i 's/\r//' Changelog
 
-%build
 %cmake_qt5 \
-      -DBUILD_SHARED_LIBS:BOOL=OFF
-%make_build
+	-DBUILD_SHARED_LIBS:BOOL=OFF \
+	-G Ninja
+
+%build
+%ninja_build -C build
 
 %install
-%make_install -C build
+%ninja_install -C build
