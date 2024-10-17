@@ -4,7 +4,7 @@ Version:	2.6.1.1
 Release:	7
 License:	GPLv2+
 Group:		Graphics
-Url:		http://qtpfsgui.sourceforge.net/
+Url:		https://qtpfsgui.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/qtpfsgui/%{name}-%{version}.tar.bz2
 Patch0:		luminance-hdr-2.6.1.1-exiv2-0.28.patch
 # Source mirror: https://github.com/LuminanceHDR/LuminanceHDR
