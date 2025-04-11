@@ -1,7 +1,7 @@
 Summary:	A graphical tool for creating and tone-mapping HDR images
 Name:		luminance-hdr
 Version:	2.6.1.1
-Release:	7
+Release:	8
 License:	GPLv2+
 Group:		Graphics
 Url:		https://qtpfsgui.sourceforge.net/
@@ -45,9 +45,17 @@ BuildRequires:	pkgconfig(OpenEXR)
 BuildRequires:	pkgconfig(zlib)
 
 Provides:	qtpfsgui
+
 Requires:	qt5-database-plugin-sqlite
+
 Recommends:	hugin
 
+BuildSystem:	cmake
+BuildOption:	-DBUILD_SHARED_LIBS:BOOL=OFF
+
+
+%patchlist
+https://raw.githubusercontent.com/gentoo/gentoo/refs/heads/master/media-gfx/luminance-hdr/files/luminance-hdr-2.6.1.1-no-qtwebengine.patch
 
 %description
 Luminance is a graphical program for assembling bracketed photos into High
@@ -63,20 +71,3 @@ operators for creating low dynamic range versions of HDR images.
  %{_iconsdir}/hicolor/*/apps/%{name}.*
 %{_datadir}/appdata/net.sourceforge.qtpfsgui.LuminanceHDR.appdata.xml
 
-#----------------------------------------------------------------------------
-
-%prep
-%autosetup -p1
-
-# fix inconsistant newlines
-sed -i 's/\r//' Changelog
-
-%cmake_qt5 \
-	-DBUILD_SHARED_LIBS:BOOL=OFF \
-	-G Ninja
-
-%build
-%ninja_build -C build
-
-%install
-%ninja_install -C build
